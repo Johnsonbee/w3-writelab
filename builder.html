@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="builder-container">
+    <aside class="chapter-library">
+        <h2>Select Chapters</h2>
+        <p class="subtitle">Click to add to your custom project.</p>
+        
+        <div class="chapter-card" data-id="abstract" data-price="1000">
+            <div>
+                <h3>Abstract</h3>
+                <span>₦1,000</span>
+            </div>
+            <button class="add-btn">+</button>
+        </div>
+
+        <div class="chapter-card" data-id="intro" data-price="2500">
+            <div>
+                <h3>Introduction</h3>
+                <span>₦2,500</span>
+            </div>
+            <button class="add-btn">+</button>
+        </div>
+
+        <div class="chapter-card" data-id="lit-review" data-price="5000">
+            <div>
+                <h3>Literature Review</h3>
+                <span>₦5,000</span>
+            </div>
+            <button class="add-btn">+</button>
+        </div>
+    </aside>
+
+    <main class="project-summary">
+        <div class="summary-header">
+            <h2>Your Custom Project</h2>
+            <div class="total-badge">Total: <span id="total-price">₦0</span></div>
+        </div>
+
+        <ul id="selected-list" class="selected-list">
+            <li class="empty-state">No chapters added yet.</li>
+        </ul>
+
+        <button class="checkout-btn" disabled>Generate Project Structure</button>
+    </main>
+</div>
+</body>
+</html>
